@@ -11,7 +11,7 @@ package gateapi
 
 type SubAccountKey struct {
 	// User ID
-	UserId string `json:"user_id,omitempty"`
+	UserId int64 `json:"user_id,omitempty"`
 	// Mode: 1 - classic 2 - portfolio account
 	Mode int32 `json:"mode,omitempty"`
 	// API key name
@@ -25,7 +25,7 @@ type SubAccountKey struct {
 	// State 1 - normal 2 - locked 3 - frozen
 	State int32 `json:"state,omitempty"`
 	// Creation time
-	CreatedAt string `json:"created_at,omitempty"`
+	CreatedAt int64 `json:"created_at,omitempty"`
 	// Last update time
-	UpdatedAt string `json:"updated_at,omitempty"`
+	UpdatedAt int64 `json:"updated_at,omitempty"`
 }
