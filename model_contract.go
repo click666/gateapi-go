@@ -83,4 +83,6 @@ type Contract struct {
 	CreateTime float64 `json:"create_time,omitempty"`
 	// The factor for the maximum of the funding rate. Maximum of funding rate = (1/market maximum leverage - maintenance margin rate) * funding_cap_ratio
 	FundingCapRatio string `json:"funding_cap_ratio,omitempty"`
+	// 合约市场上架时间
+	LaunchTime string `json:"launch_time"`
 }
